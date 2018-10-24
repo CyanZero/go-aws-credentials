@@ -16,6 +16,10 @@ import (
 // To get a temporary session via MFA token
 func test() {
   sess := sessionutil.GetSession("", "SerialNumber of your MFA device", "Token Code from you MFA device")
+  svc := s3.New(sess)
+  input := &s3.ListBucketsInput{}
+  
+  fmt.Println(svc.ListBuckets(input))
 }
 ```
 
