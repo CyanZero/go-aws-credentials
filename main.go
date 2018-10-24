@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"github.com/CyanZero/go-aws-credentails/sessionutil"
 )
 
 /**
